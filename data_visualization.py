@@ -140,6 +140,8 @@ class DataVisualization:
                     start_time = datetime.strptime(start_time_stamp, format)
                     end_time = datetime.strptime(end_time_stamp, format)
                     time_dif = end_time - start_time
+
+                    time_of_cycle.append(time_dif.seconds)
                     '''if len((time_dif.split('.')[0]).split(':')) == 3:
                         x =['0'] +(time_dif.split('.')[0]).split(':')
                         print(x)
@@ -149,7 +151,7 @@ class DataVisualization:
                     #    time_def_in_sec = int(dd) * 86400 + int(hh) * 3600 + int(mm) * 60 + int(ss)
                     #except:
                     #    pass
-                    time_of_cycle.append(time_dif.seconds)
+
 
             print('Average time car {}: '.format((new_data_set_cat[cat_index])),(sum(time_of_cycle)/len(time_of_cycle)))
             squares = [i for i in range(len(time_of_cycle))]
