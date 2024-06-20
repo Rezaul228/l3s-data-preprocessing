@@ -1,3 +1,5 @@
+# Read the data from the raw data file according to this dictionary.
+# Which tells that the event-start and event-end
 import re
 
 class All_station:
