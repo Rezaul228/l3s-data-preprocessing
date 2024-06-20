@@ -1,3 +1,4 @@
+# After generating the event-based data (by main_original_data.py) this code will transfer it to time-series data.
 from os import stat
 import pandas as pd
 import numpy as np
